@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.SladamiPrzygod" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#BA8D4A</item>
+        <item name="colorPrimaryVariant">#BA8D4A</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">#88C640</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#BA8D4A</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SladamiPrzygod">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="postSplashScreenTheme">@style/Theme.SladamiPrzygod</item>
+
+    </style>
+</resources>

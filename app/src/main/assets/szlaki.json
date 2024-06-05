@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Szlak Górski",
+    "image": "zdj1",
+    "description": "Szlak Górski oferuje zapierające dech w piersiach widoki na góry oraz liczne punkty widokowe. Można zobaczyć wodospady, skalne formacje oraz bujną roślinność.",
+    "time": "3 godziny"
+  },
+  {
+    "title": "Szlak Leśny",
+    "image": "zdj2",
+    "description": "Szlak Leśny prowadzi przez gęste lasy i malownicze ścieżki. Można spotkać dzikie zwierzęta, zobaczyć stare drzewa i cieszyć się spokojem natury.",
+    "time": "2 godziny"
+  },
+  {
+    "title": "Szlak Nadmorski",
+    "image": "zdj3",
+    "description": "Szlak Nadmorski biegnie wzdłuż wybrzeża, oferując widoki na morze, piaszczyste plaże i klify. Idealny dla miłośników morskich krajobrazów.",
+    "time": "4 godziny"
+  },
+  {
+    "title": "Szlak Historyczny",
+    "image": "zdj4",
+    "description": "Szlak Historyczny prowadzi przez miejsca o dużym znaczeniu historycznym. Można zobaczyć stare zamki, ruiny oraz muzea, które opowiadają o bogatej przeszłości regionu.",
+    "time": "5 godzin"
+  },
+  {
+    "title": "Szlak Wodospadów",
+    "image": "zdj5",
+    "description": "Szlak Wodospadów pozwala na zobaczenie licznych wodospadów, strumieni i rzek. To idealne miejsce dla miłośników wody i pięknych krajobrazów.",
+    "time": "3,5 godziny"
+  },
+  {
+    "title": "Szlak Pustynny",
+    "image": "zdj6",
+    "description": "Szlak Pustynny prowadzi przez suche i piaszczyste tereny, gdzie można podziwiać unikalne formacje skalne i kaktusy.",
+    "time": "4,5 godziny"
+  },
+  {
+    "title": "Szlak Jezior",
+    "image": "zdj7",
+    "description": "Szlak Jezior biegnie wokół pięknych, krystalicznie czystych jezior. To świetne miejsce do obserwacji ptaków i cieszenia się spokojem wody.",
+    "time": "3 godziny"
+  },
+  {
+    "title": "Szlak Polny",
+    "image": "zdj8",
+    "description": "Szlak Polny prowadzi przez malownicze pola i łąki, oferując piękne widoki na kwitnące kwiaty i rośliny.",
+    "time": "2,5 godziny"
+  },
+  {
+    "title": "Szlak Kanionów",
+    "image": "zdj9",
+    "description": "Szlak Kanionów to trasa prowadząca przez głębokie kaniony i wąwozy, gdzie można zobaczyć spektakularne formacje skalne.",
+    "time": "5 godzin"
+  },
+  {
+    "title": "Szlak Śnieżny",
+    "image": "zdj10",
+    "description": "Szlak Śnieżny biegnie przez obszary pokryte śniegiem, idealne dla miłośników zimowych krajobrazów i sportów zimowych.",
+    "time": "4 godziny"
+  }
+]
