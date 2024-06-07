@@ -9,4 +9,5 @@
         <item name="android:statusBarColor" tools:targetApi="l">#BA8D4A</item>
         <item name="android:windowBackground">@color/black</item>
     </style>
+
 </resources>

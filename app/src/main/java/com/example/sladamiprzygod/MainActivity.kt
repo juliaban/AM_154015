@@ -3,14 +3,11 @@ package com.example.sladamiprzygod
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.sladamiprzygod.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
-
-    private val viewModel by viewModels<MainViewModel>()
 
     private lateinit var binding: ActivityMainBinding
     private val preferences: SharedPreferences by lazy {
@@ -18,33 +15,20 @@ class MainActivity : BaseActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
-
-        installSplashScreen().apply {
-            setKeepOnScreenCondition{
-                !viewModel.isReady.value
-            }
-
-        }
-
         setThemeFromPreferences()
 
-        setLayout(R.layout.activity_main)
+        Thread.sleep(3000)
+        installSplashScreen()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.buttonRozpocznij.setOnClickListener{
             val nowaAktywnosc = Intent(applicationContext, NextActivity::class.java)
-
-            binding.buttonRozpocznij.animate().apply {
-                duration = 1000
-                rotationXBy(360f)
-            }.start()
-
-            binding.buttonRozpocznij.postDelayed({
-                startActivity(nowaAktywnosc)
-            }, 1000)
+            startActivity(nowaAktywnosc)
         }
 
         binding.themeSwitch!!.isChecked = isDarkTheme()

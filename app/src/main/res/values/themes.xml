@@ -8,12 +8,11 @@
         <item name="colorOnSecondary">@android:color/white</item>
         <item name="android:statusBarColor" tools:targetApi="l">#BA8D4A</item>
         <item name="android:windowBackground">@android:color/white</item>
-
     </style>
 
-    <style name="Theme.App.Starting" parent="Theme.SladamiPrzygod">
-        <item name="windowSplashScreenBackground">@color/white</item>
+    <style name="Theme.SladamiPrzygod.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_hiking_24</item>
         <item name="postSplashScreenTheme">@style/Theme.SladamiPrzygod</item>
-
     </style>
 </resources>

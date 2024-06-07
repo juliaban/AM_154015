@@ -57,6 +57,6 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
     implementation ("androidx.constraintlayout:constraintlayout:2.1.0")
 
-    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation ("androidx.core:core-splashscreen:1.0.1")
 
 }
