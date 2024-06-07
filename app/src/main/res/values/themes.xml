@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.SladamiPrzygod" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.SladamiPrzygod" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#BA8D4A</item>
         <item name="colorPrimaryVariant">#BA8D4A</item>
@@ -10,9 +10,11 @@
         <item name="android:windowBackground">@android:color/white</item>
     </style>
 
-    <style name="Theme.SladamiPrzygod.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="windowSplashScreenBackground">@android:color/white</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_hiking_24</item>
+    <style name="Theme.SladamiPrzygod" parent="Base.Theme.SladamiPrzygod"/>
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_category_24</item>
         <item name="postSplashScreenTheme">@style/Theme.SladamiPrzygod</item>
     </style>
 </resources>
