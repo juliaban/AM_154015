@@ -14,6 +14,7 @@
 
     <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenIconBackgroundColor">@null</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_category_24</item>
         <item name="postSplashScreenTheme">@style/Theme.SladamiPrzygod</item>
     </style>
