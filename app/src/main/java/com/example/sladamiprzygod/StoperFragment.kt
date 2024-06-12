@@ -15,16 +15,16 @@ class StoperFragment : Fragment() {
     private val binding get() = _binding!!
 
     private var running = false
-    private var startTime = 0L // Czas rozpoczęcia liczenia
-    private var elapsedTime = 0L // Całkowity czas, który upłynął
-    private var pauseTime = 0L // Czas zatrzymania
+    private var startTime = 0L
+    private var elapsedTime = 0L
+    private var pauseTime = 0L
 
     private val handler = Handler()
     private val runnable = object : Runnable {
         override fun run() {
             if (running) {
                 val currentTime = System.currentTimeMillis()
-                elapsedTime = currentTime - startTime // Aktualny czas minus czas rozpoczęcia
+                elapsedTime = currentTime - startTime
                 updateTimerText()
                 handler.postDelayed(this, 1000)
             }
@@ -46,7 +46,7 @@ class StoperFragment : Fragment() {
             if (!running) {
                 running = true
                 binding.btnStart.isEnabled = false
-                startTime = System.currentTimeMillis() - elapsedTime // Ustawienie startTime z uwzględnieniem poprzedniego czasu
+                startTime = System.currentTimeMillis() - elapsedTime
                 handler.post(runnable)
             }
         }
@@ -54,7 +54,7 @@ class StoperFragment : Fragment() {
         binding.btnPause.setOnClickListener {
             if (running) {
                 running = false
-                pauseTime = System.currentTimeMillis() // Zapisanie czasu zatrzymania
+                pauseTime = System.currentTimeMillis()
                 handler.removeCallbacks(runnable)
             }
         }
@@ -62,7 +62,7 @@ class StoperFragment : Fragment() {
         binding.btnResume.setOnClickListener {
             if (!running) {
                 running = true
-                startTime += System.currentTimeMillis() - pauseTime // Korekcja startTime o czas zatrzymania
+                startTime += System.currentTimeMillis() - pauseTime
                 handler.post(runnable)
             }
         }
@@ -109,8 +109,6 @@ class StoperFragment : Fragment() {
         }
     }
 
-
-
     override fun onResume() {
         super.onResume()
         if (running) {
@@ -125,6 +123,8 @@ class StoperFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+
+        handler.removeCallbacks(runnable)
         _binding = null
     }
 

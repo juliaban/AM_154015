@@ -13,7 +13,7 @@ open class BaseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_base)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-        supportActionBar?.title = getString(R.string.app_name) // Ustawianie tytuĹ‚u na nazwÄ™ aplikacji
+        supportActionBar?.title = getString(R.string.app_name)
     }
 
 

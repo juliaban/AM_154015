@@ -6,3 +6,4 @@ data class Szlak(
     val description: String,
     val time: String
 )
+
